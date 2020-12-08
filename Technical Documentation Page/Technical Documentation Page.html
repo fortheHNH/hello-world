@@ -1,0 +1,244 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Technical Documentation Page</title>
+      <link href="stylesheet.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+      <!-- font-family: 'Montserrat', sans-serif; -->
+  </head>
+
+  <body class="main-container">
+
+      <header id="logo-header">
+        <img id="logo" src="https://i.postimg.cc/QN7VvQnc/placeholder-com-logo4.jpg" alt="Logo">
+        <a href="#" id="log-in">Log In</a>
+      </header>
+      <nav id="navbar">
+          <header>
+            <h1>Front-End Web Development</h1>
+          </header>
+          <a class="nav-link" href="#html">HTML</a>
+          <a class="nav-link" href="#css">CSS</a>
+          <a class="nav-link" href="#javascript">JavaScript</a>
+          <a class="nav-link" href="#bootstrap">Bootstrap</a>
+          <a class="nav-link" href="#react">React</a>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="html">
+          <header>
+            <h2>HTML</h2>
+          </header>
+            <h3>What is HTML</h3>
+          <ul>
+            <li>HTML stands for Hyper Text Markup Language</li>
+            <li>HTML is the standard markup language for creating Web pages</li>
+            <li>HTML describes the structure of a Web page</li>
+            <li>HTML consists of a series of elements</li>
+            <li>HTML elements tell the browser how to display the content</li>
+            <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+          </ul><br />
+
+            <h3>What is HTML5?</h3>
+              <p>
+                Hailed (and reviled) as ‘the Flash killer’, HTML5 aids better design and layout, while supporting new types of content. These updates have necessitated quite a few changes to the base code of HTML itself.
+                In addition to new layout tags like ‘main’ and ‘section’, new media tags (including ‘video’ and ‘audio’) have been introduced to allow native support for multimedia content and applications. Built-in multimedia support means that layout options are more flexible, and developers can include content in new and more intuitive ways.
+                HTML 5 also brings support for APIs. APIs are used when connecting to external sites and services or creating web applications from scratch. Developers can use the new HTML5 API tools to build exciting content, such as personalized video players and interactive games.
+                Perhaps unsurprisingly, all these new tags and attributes have created a learning curve for neophytes and seasoned pros alike. Enthusiasm for HTML 5 has been growing steadily since its first public working draft was published in 2008. Developers seeking to stay on the cutting edge of their profession must understand HTML5’s capabilities and limitations, and also the browsers, applications and media content with which it is compatible.
+              </p>
+
+        </section>
+        <section class="main-section" id="css">
+          <header>
+            <h2>CSS</h2>
+          </header>
+            <h3>What is CSS</h3>
+            <p>
+              CSS stands for Cascading Style Sheets with an emphasis placed on “Style.” While HTML is used to structure a web document (defining things like headlines and paragraphs, and allowing you to embed images, video, and other media), CSS comes through and specifies your document’s style—page layouts, colors, and fonts are all determined with CSS. Think of HTML as the foundation (every house has one), and CSS as the aesthetic choices (there’s a big difference between a Victorian mansion and a mid-century modern home).
+            </p><br/>
+            <h3>How Does it Work</h3>
+            <div>
+              <code class="code-box">
+              display:flex;
+              </code>
+
+              </div>
+            <p>
+              CSS brings style to your web pages by interacting with HTML elements. Elements are the individual HTML components of a web page—for instance a paragraph—which in HTML might look like this:
+              This is my paragraph!
+              If you wanted to make this paragraph appear pink and bold to people viewing your web page through a web browser, you’d use CSS code that looks like this:
+              p  {  color:pink;  font-weight:bold;  }
+              In this case, “p” (the paragraph) is called the “selector”—it’s the part of CSS code specifying which HTML element the CSS styling will effect. In CSS, the selector is written to the left of the first curly bracket. The information between curly brackets is called a declaration, and it contains properties and values that are applied to the selector. Properties are things like font size, color, and margins, while values are the settings for those properties. In the example above, “color” and “font-weight” are both properties, and “pink” and “bold” are values. The full bracketed set of
+              {  color:pink;  font-weight:bold;  }
+              is the declaration, and again, “p” (meaning the HTML paragraph) is the selector. These same basic principles can be applied to change font sizes, background colors, margin indentations, and more. For instance. . .
+              <code>body  {  background-color:lightblue;  }</code>
+              . . .would make your page’s background light blue, or. . .
+              <code>  p  {  font-size:20px;  color:red;  } </code>
+              . . .will create a 20 point font paragraph with red letters.
+            </p>
+        </section>
+        <section class="main-section" id="javascript">
+          <header>
+            <h2>JavaScript</h2>
+          </header>
+            <h3>A High Level Definition</h3>
+            <p>
+              JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.
+            </p>
+            <div>
+            <code class="code-box">
+                  a:hover{
+                    background-color:blue;
+                  }
+              </code>
+              <code class="code-box">
+                display:grid;
+              </code>
+              </div>
+              <br />
+            <p>
+              HTML is the markup language that we use to structure and give meaning to our web content, for example defining paragraphs, headings, and data tables, or embedding images and videos in the page.
+              CSS is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.
+              JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)
+              The three layers build on top of one another nicely. Let's take a simple text label as an example. We can mark it up using HTML to give it structure and purpose:
+            </p>
+        </section>
+        <section class="main-section" id="bootstrap">
+          <header>
+            <h2>Bootstrap</h2>
+          </header>
+          <h3>Bootstrap in Lamen Terms</h3>
+          <p>
+            Bootstrap is a giant collection of handy, reusable bits of code written in HTML, CSS, and JavaScript. It’s also a front-end development framework that enables developers & designers to quickly build fully responsive websites.
+          </p>
+          <h3>Why is Bootstrap the Go-To</h3>
+          <p>
+            1. Bootstrap’s Responsive Grid
+
+            No more spending hours coding your own grid—Bootstrap comes with its own grid system predefined!
+
+            Now, you can get straight to filling your containers with content.
+
+            Defining custom breakpoints for each column is a snap using their extra small, small, medium, large, and extra large breaks. You can also simply stick to the default as it might already meet the needs of your site.
+            <div>
+              <code class="code-box"> grid-template-columns: 1fr 1fr 1fr;</code>
+            </div>
+            <br/><br />
+            2. Bootstrap’s Responsive Images
+
+            Bootstrap comes with its own code for automatically resizing images based on the current screen size. Just add the .img-responsive class to your images, and the predefined CSS rules take care of the rest.
+
+            Let Bootstrap resize your images for you!
+
+            It can even change the shape of your images with the addition of classes like img-circle and img-rounded, and that’s without going back and forth between the code and your design software.
+            <br/><br />
+            3. Bootstrap’s Components
+
+            Bootstrap comes with a whole barrelful of components you can easily tack onto your web page, including:
+            <br/>
+            Navigation bars
+            Dropdowns
+            Progress bars
+            Thumbnails
+            …and more!
+            <br />
+            Not only is it a breeze to add eye-catching design elements to your webpage, you’ll also be able to rest assured knowing that every one of them will look great no matter the screen size or device used to view them.
+
+            That’s a lot of ready-made functionality right at your fingertips!
+
+            For a more complete list of addable features, check out the component documentation.
+            <br /><br />
+            4. Bootstrap’s JavaScript
+
+            Still not enough functions? Try JQuery!
+
+            Bootstrap also allows developers to take advantage of over a dozen custom JQuery plugins. JQuery gives you even more room to play with interactivity, offering up easy solutions for modal popups, transitions, image carousels, and—one of my personal favorites—a plugin called scrollspy, which automatically updates your navigation bar as you scroll through a page.
+            <br /><br />
+            5. Bootstrap’s Documentation
+
+            Bootstrap’s documentation is some of the best I’ve ever seen. Every piece of code is described and explained in explicit detail on their website.
+
+            Explanations also include code samples for basic implementation, simplifying the process for even the most beginner of beginners. All you need to do is choose a component, copy and paste the code into your page, and tweak from there.
+            <br /><br />
+            6. Bootstrap’s Customizability
+
+            One of the main critiques when it comes to frameworks such as Bootstrap is their size—the weight they throw around can really slow down your application upon first load. The current version of Bootstrap’s CSS file, for example, is a whopping 119 KB. While this may not seem especially large compared to image and video files, for a CSS file, that’s enormous!
+
+            What Bootstrap allows you to do to combat this, however, is customize which functionality you want to include in your download. By simply going to their customize and download page, you can check off the features you won’t need for your application, trimming the weight off your file and saving your users the additional load time.
+
+            Customization is key!
+            <code class="code-box">
+              grid-template-rows: 1fr 20% auto;
+            </code>
+
+            <code class="code-box">
+              justify-content:flex-end;
+            </code>
+            <br /><br />
+            7. Bootstrap’s Community
+
+            As with so many open-source projects, Bootstrap has a large community of designers and developers behind it. Being hosted on GitHub makes it easy for developers to modify and contribute to Bootstrap’s codebase. It also makes it easy for people to collaborate, lend their advice, and interact with peers and fellow users.
+
+            Bootstrap has an active Twitter page, a Bootstrap blog, and even a dedicated Slack room. And that doesn’t even get into the wealth of developers willing to help with technical problems on Stack Overflow, where all questions can be found under the bootstrap-4 tag.
+            <br /><br />
+            8. Bootstrap’s External Templates
+
+            As the popularity of Bootstrap grew, people started creating templates based on Bootstrap in order to accelerate the web development process even further. There are many websites out there dedicated to sharing and buying custom templates based on Bootstrap.
+            </p>
+        </section>
+        <section class="main-section" id="react">
+          <header>
+            <h2>React</h2>
+          </header>
+            <h3>What is ReachJS</h3>
+            <p>
+              Figuring out that a flexible, high-paying career as a web developer is the dream is the easy part. Where it gets harder is figuring out exactly what skills you need to land a job. If you’re planning on building websites for a living, you probably know you’ll need to learn coding languages like HTML, CSS, and JavaScript, but you’ll also notice developer job listings that call for less familiar skills.
+              One buzzy skill you’ll see pop up is “React JS.” But what is React JS? Is it another coding language? A software program? Or something totally different?
+              To answer your questions and get you up to speed with this valuable web developer tool, we’ve put together a handy What is React JS tutorial.
+            </p>
+            <br />
+            <p>
+              React is a JavaScript library that specializes in helping developers build user interfaces, or UIs. In terms of websites and web applications, UIs are the collection of on-screen menus, search bars, buttons, and anything else someone interacts with to USE a website or app.
+
+              Note: readers often ask “is React JS frontend or backend?” The answer is: definitely frontend. You can keep this straight by remembering the “on screen” aspect of UIs—React is used exclusively for “client side” programming (building things that a user will see on screen in their browser window), which makes React JS a frontend library.
+
+              Before React JS, developers were stuck building UIs by hand with “vanilla JavaScript” (developer speak for the raw JavaScript language on its own) or with less UI-focused React predecessors like jQuery. That meant longer development times and plenty of opportunities for errors and bugs. So, in 2011, Facebook engineer Jordan Walke created React JS specifically to improve UI development.
+
+              In addition to providing reusable React library code (saving development time and cutting down on the chance for coding errors), React comes with two key features that add to its appeal for JavaScript developers:
+
+              JSX
+              Virtual DOM
+              To get an even better understanding of React JS and why you should use it, let’s take a look at both.
+              </p>
+              <code class="code-box">
+                opacity:0.5
+              </code>
+              <code class="code-box">
+                overflow-x:scroll
+              </code>
+              <code class="code-box">
+                overflow-y:hidden
+              </code>
+            <p>
+              At the heart of any basic website are HTML documents. Web browsers read these documents and display them on your computer, tablet, or phone as web pages. During this process, browsers create something called a Document Object Model (DOM), a representational tree of how the web page is arranged. Developers can then add dynamic content to their projects by modifying the DOM with languages like JavaScript.
+
+              JSX (short for JavaScript eXtension) is a React extension that makes it easy for web developers to modify their DOM by using simple, HTML-style code. And—since React JS browser support extends to all modern web browsers—JSX is compatible with any browser platform you might be working with.
+
+              This isn’t just a matter of convenience, though—using JSX to update a DOM leads to significant site performance improvements and development efficiency. How? It’s all about the next React feature, the Virtual DOM.
+              </p>
+        </section>
+      </main>
+      <div id="advert">
+        Your Ad Here
+      </div>
+
+
+  </body>
+
+
+
+</html>
